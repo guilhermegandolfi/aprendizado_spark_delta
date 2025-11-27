@@ -37,13 +37,7 @@ docker-compose up -d
 
 ### 4. Acesse o Jupyter Lab
 
-Pegue o token de acesso:
-
-```bash
-docker-compose logs jupyter | grep token
-```
-
-Acesse: http://localhost:8888
+Acesse diretamente (sem necessidade de token): http://localhost:8888
 
 ### 5. Acesse o MinIO Console
 
@@ -55,7 +49,7 @@ Acesse: http://localhost:8888
 
 | Serviço | Porta | Descrição |
 |---------|-------|-----------|
-| Jupyter Lab | 8888 | Interface do Jupyter |
+| Jupyter Lab | 8888 | Interface do Jupyter (sem token) |
 | Spark UI | 4040 | Interface do Spark (quando job está rodando) |
 | MinIO API | 9000 | API S3-compatible |
 | MinIO Console | 9001 | Interface web do MinIO |
