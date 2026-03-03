@@ -11,7 +11,7 @@ Este repositório demonstra:
 - 📓 Notebooks Jupyter interativos com exemplos práticos
 - 🐳 Infraestrutura reproduzível com Docker Compose
 
-**Dataset utilizado:** Netflix Titles (com dados aumentados)
+**Dataset utilizado:** Netflix Titles
 
 ---
 
@@ -113,15 +113,10 @@ aprendizado_spark_delta/
 │   ├── 02_lendo_arquivo.ipynb             # Leitura com Spark
 │   ├── 03_usando_delta.ipynb              # Delta Lake basics
 │   ├── 04_usando_delta_sql.ipynb          # SQL queries
-│   ├── metastore_db/                      # Derby metadata store
-│   ├── spark-warehouse/                   # Warehouse directory
-│   └── RAW/                               # Raw data layer
 │
 ├── data/
 │   ├── netflix_titles.csv                 # Dataset original
 │   ├── netflix_titles_augmented.csv       # Dataset aumentado
-│   ├── delta/                             # Delta Lake tables
-│   └── _delta_log/                        # Delta transaction logs
 │
 ├── dockerfiles/
 │   └── Dockerfile                         # Imagem customizada
@@ -222,7 +217,3 @@ Sinta-se livre para fazer fork, abrir issues e enviar pull requests!
 **Desenvolvido com ❤️ para aprendizado de Big Data & Apache Spark**
 3. Testar leitura/escrita com Delta Lake
 4. Integrar Spark com MinIO
-
-## 📝 Licença
-
-[Sua licença aqui]
